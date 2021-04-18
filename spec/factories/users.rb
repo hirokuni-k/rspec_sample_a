@@ -17,4 +17,7 @@ FactoryBot.define do
   trait :senior do
     age { rand(65..120) }
   end
+  trait :invalid do
+    email { nil }
+  end
 end
